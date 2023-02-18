@@ -7,6 +7,7 @@ type icarbuilder interface {
 	getCar() car
 }
 
+// factory pattern
 func newCarBuilder(carType string) icarbuilder {
 	switch carType {
 	case "sports":
